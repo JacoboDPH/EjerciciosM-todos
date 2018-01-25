@@ -17,11 +17,11 @@ public class metodos {
 		
 		do {
 
-			imprime("Menu");
+			imprime("\nMenu\n");
 			imprime("1 - Genera pares");
 			imprime("2 - Genera impares");
 			imprime("3 - Salir");
-			imprime("Elige una opción");
+			imprime("\nElige una opción");
 
 			opcio = teclado.nextByte();
 
@@ -45,7 +45,9 @@ public class metodos {
 
 			default:
 				
-				imprime("Por favor del menú");
+				imprime("Por favor introduzca un valor del menu del menú");
+				
+				//Aquí hay un error, ya que este mensaje aparece después de preguntar por el número a generar.
 				
 				break;
 			}
@@ -97,7 +99,7 @@ public class metodos {
 
 			if (i % 2 == 0) {
 
-				imprime("par " + i);
+				System.out.print(" " + i);
 
 			}
 
@@ -111,7 +113,7 @@ public class metodos {
 
 			if (i % 2 != 0) {
 
-				imprime("impar " + i);
+				System.out.print(" "+ i );
 
 			}
 
@@ -119,4 +121,7 @@ public class metodos {
 
 	}
 
+	public void introduceNumero() {
+		
+	}
 }
